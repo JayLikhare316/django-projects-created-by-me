@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- addsubcategory.html -->
+<form method="get" action="#">
+  <div class="col-md-12"> <div class="col-12"> 
+    <label for="subname">Brand Name</label>
+     <select name="subname" id="subname" class="form-select" aria-placeholder="Select Brand" required style = "font-size: 13px ;color: #676d73;"> 
+      <option value="" disabled selected hidden>Select Brand</option> 
+      {% for Subcategory in subobj %} 
+      <option value="{{ SubCategory.id }}">{{ Subcategory.subname }}</option>
+       {% endfor %} </select> 
+      </div> 
+    </div>
+  </form>
+  
+</body>
+</html>
